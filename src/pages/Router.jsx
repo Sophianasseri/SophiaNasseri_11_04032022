@@ -10,13 +10,15 @@ import NotFound from './NotFound';
 function Router() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accommodation" element={<Accommodation />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="wrap-content">
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/accommodation" element={<Accommodation />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );

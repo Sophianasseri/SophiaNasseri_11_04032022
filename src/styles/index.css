@@ -16,15 +16,16 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-#root {
+.wrap-content {
+  margin: auto;
   max-width: 1440px;
-  width: 100%;
-  margin: 0 70px;
+  padding-bottom: 2.5rem;
 }
 
 .header {
@@ -44,4 +45,20 @@ body {
   color: #ff6080;
   width: 50%;
   text-align: end;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 209px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer img {
+  margin-bottom: 63px;
 }/*# sourceMappingURL=index.css.map */

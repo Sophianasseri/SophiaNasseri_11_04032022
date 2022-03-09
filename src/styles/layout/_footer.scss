@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 209px;
+  color: $secondary-color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  img {
+    margin-bottom: 63px;
+  }
+}
