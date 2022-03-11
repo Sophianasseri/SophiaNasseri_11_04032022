@@ -1,10 +1,17 @@
 import React from 'react';
+import Banner from '../components/Banner';
+import aboutBanner from '../assets/aboutBanner.png';
+import dropdownData from '../data/dropdownData';
+import Dropdown from '../components/Dropdown';
 
 function About() {
   return (
-    <div>
-      <h1>À propos</h1>
-    </div>
+    <section>
+      <Banner imageSrc={aboutBanner} />
+      {dropdownData.map(({ title, content }) => (
+        <Dropdown title={title} content={content} />
+      ))}
+    </section>
   );
 }
 
