@@ -24,7 +24,7 @@ function Home() {
   }, []);
 
   if (isError) {
-    return <p>Erreur</p>;
+    return <p>Oups! il y eu un problème</p>;
   }
   return (
     <main>
@@ -40,7 +40,7 @@ function Home() {
           ))}
         </section>
       ) : (
-        <p>Loader</p>
+        <p>Chargement</p>
       )}
     </main>
   );

@@ -11,13 +11,15 @@ function Router() {
   return (
     <BrowserRouter>
       <div className="wrap-content">
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/accommodation" element={<Accommodation />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="container">
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/accommodation" element={<Accommodation />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
       </div>
       <Footer />
     </BrowserRouter>
