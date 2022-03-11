@@ -14,5 +14,9 @@ export default Banner;
 
 Banner.propTypes = {
   imageSrc: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+};
+
+Banner.defaultProps = {
+  children: '',
 };
