@@ -5,15 +5,15 @@
   align-items: center;
   background: #000;
   height: 160px;
-  color: $secondary-color;
+  color: var(--secondary-color);
   position: absolute;
   bottom: 0;
   width: 100%;
-  img {
-    margin: 0 auto 30px auto;
-  }
 }
-.footer-content {
+.image {
+  margin: 0 auto 30px auto;
+}
+.content {
   display: flex;
   flex-direction: column;
 }

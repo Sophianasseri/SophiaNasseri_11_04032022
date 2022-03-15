@@ -1,0 +1,39 @@
+/*Variables*/
+html {
+  --main-color: #ff6060;
+  --secondary-color: #fff;
+  --tertiary-color: #666666;
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* page container*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrap-content {
+  margin: auto;
+  max-width: 1440px;
+  padding-bottom: 12em;
+}
+.container {
+  margin: 0 70px;
+}

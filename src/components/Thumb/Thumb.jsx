@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './thumb.module.css';
 
 function Thumb({ imageSrc, title }) {
   return (
-    <div className="thumb">
-      <img src={imageSrc} alt={title} />
-      <h2>{title}</h2>
+    <div className={styles.thumb}>
+      <img className={styles.image} src={imageSrc} alt={title} />
+      <h2 className={styles.title}>{title}</h2>
     </div>
   );
 }

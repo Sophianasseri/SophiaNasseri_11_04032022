@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './banner.module.css';
 
 function Banner({ imageSrc, children }) {
   return (
-    <section className="banner">
-      <img src={imageSrc} alt="" />
+    <section className={styles.banner}>
+      <img className={styles.image} src={imageSrc} alt="" />
       {children}
     </section>
   );
