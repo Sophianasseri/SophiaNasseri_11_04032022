@@ -1,0 +1,23 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: var(--main-color);
+}
+.code {
+  font-size: 200px;
+}
+.message {
+  font-size: 30px;
+}
+.link {
+  text-decoration: solid;
+  text-align: center;
+  color: var(--main-color);
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}

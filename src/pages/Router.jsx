@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 import Home from './Home/Home';
 import About from './About/About';
 import Accommodation from './Accomodation';
-import NotFound from './NotFound';
+import NotFound from './NotFound/NotFound';
 
 function Router() {
   return (
