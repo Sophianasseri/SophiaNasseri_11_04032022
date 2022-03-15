@@ -2,7 +2,7 @@ import React from 'react';
 import homeBanner from '../../assets/homeBanner.png';
 import Banner from '../../components/Banner/Banner';
 import Thumb from '../../components/Thumb/Thumb';
-import data from '../../assets/accommodaton.json';
+import data from '../../data/accommodaton.json';
 import styles from './home.module.css';
 
 function Home() {
