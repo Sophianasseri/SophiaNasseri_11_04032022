@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import homeBanner from '../../assets/homeBanner.png';
 import Banner from '../../components/Banner/Banner';
 import Thumb from '../../components/Thumb/Thumb';
@@ -14,7 +15,9 @@ function Home() {
       <section className={styles.container}>
         {data.map((element) => (
           <div key={element.id}>
-            <Thumb imageSrc={element.cover} title={element.title} />
+            <Link to={`/accommodation/${element.id}`}>
+              <Thumb imageSrc={element.cover} title={element.title} />
+            </Link>
           </div>
         ))}
       </section>

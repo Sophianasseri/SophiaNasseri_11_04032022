@@ -26,5 +26,8 @@
   background: #f6f6f6;
   border-radius: 0 0 5px 5px;
   padding: 1em;
-  font-size: 20px;
+  font-size: 18px;
+}
+.smallDropdown {
+  width: 50%;
 }

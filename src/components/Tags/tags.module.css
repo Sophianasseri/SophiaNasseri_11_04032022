@@ -1,0 +1,7 @@
+.tag {
+  color: var(--secondary-color);
+  background: var(--main-color);
+  padding: 0.5em 1.2em;
+  border-radius: 20px;
+  margin-right: 10px;
+}

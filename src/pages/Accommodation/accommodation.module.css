@@ -1,0 +1,18 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+}
+.title {
+  font-weight: 400;
+}
+.tag {
+  display: flex;
+  margin: 10px 0;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+}
