@@ -26,7 +26,7 @@ function Accomodation() {
                   <p className={styles.location}>{accommodation.location}</p>
                   <ul className={styles.tag}>
                     {accommodation.tags.map((tag) => (
-                      <Tags key={tag.id} content={tag} />
+                      <Tags key={tag} content={tag} />
                     ))}
                   </ul>
                 </div>

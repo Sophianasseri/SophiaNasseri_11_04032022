@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './rating.module.css';
@@ -8,7 +9,7 @@ function Rating({ rateValue }) {
     <div className={styles.rating}>
       {stars.map((star, index) => (
         <span
-          key={star.id}
+          key={index}
           className={index < rateValue ? styles.full : styles.empty}
         >
           {star}
