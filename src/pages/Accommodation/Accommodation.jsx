@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Host from '../../components/Host/Host';
-import Rating from '../../components/Rating/rating';
+import Rating from '../../components/Rating/Rating';
 import Tags from '../../components/Tags/Tags';
-import data from '../../data/accommodaton.json';
+import data from '../../data/accommodation.json';
 import styles from './accommodation.module.css';
 
 function Accomodation() {
@@ -17,7 +17,7 @@ function Accomodation() {
         .map((accommodation) => (
           <div key={accommodation.id}>
             <section>
-              <Carousel imageScr={accommodation.pictures} />
+              <Carousel imageArr={accommodation.pictures} />
             </section>
             <section>
               <div className={styles.info}>
@@ -47,7 +47,6 @@ function Accomodation() {
                   content={<p>{accommodation.description}</p>}
                   smallDropdown
                 />
-
                 <Dropdown
                   title="Équipements"
                   content={accommodation.equipments.map((eq) => (

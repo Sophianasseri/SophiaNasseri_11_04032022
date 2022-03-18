@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './carousel.module.css';
 
-function Carousel({ imageScr }) {
+function Carousel({ imageArr }) {
   const [currentImg, setCurrentImg] = useState(0);
-  const slideLength = imageScr.length;
+  const slideLength = imageArr.length;
 
-  const nextSlide = () => {
+  const nextImg = () => {
     setCurrentImg(currentImg === slideLength - 1 ? 0 : currentImg + 1);
   };
 
-  const prevSlide = () => {
+  const prevImg = () => {
     setCurrentImg(currentImg === 0 ? slideLength - 1 : currentImg - 1);
   };
 
@@ -19,18 +19,18 @@ function Carousel({ imageScr }) {
     <div className={styles.carousel}>
       <button
         className={`${styles.prev} ${slideLength === 1 ? styles.hidden : ''}`}
-        onClick={prevSlide}
+        onClick={prevImg}
       >
         <i className="fa">&#xf053;</i>
       </button>
       <button
         className={`${styles.next} ${slideLength === 1 ? styles.hidden : ''}`}
-        onClick={nextSlide}
+        onClick={nextImg}
       >
         <i className="fa">&#xf054;</i>
       </button>
 
-      <img className={styles.image} src={imageScr[currentImg]} alt="" />
+      <img className={styles.image} src={imageArr[currentImg]} alt="" />
     </div>
   );
 }
@@ -38,5 +38,5 @@ function Carousel({ imageScr }) {
 export default Carousel;
 
 Carousel.propTypes = {
-  imageScr: PropTypes.arrayOf(PropTypes.string).isRequired,
+  imageArr: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
