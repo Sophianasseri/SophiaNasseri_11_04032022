@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './notFound.module.css';
 
 function NotFound() {
@@ -11,9 +11,9 @@ function NotFound() {
           Oups! La page que vous demandez n&apos;existe pas.
         </p>
       </div>
-      <NavLink className={styles.link} to="/">
+      <Link className={styles.link} to="/">
         Retourner sur la page d&apos;accueil
-      </NavLink>
+      </Link>
     </main>
   );
 }

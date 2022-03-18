@@ -10,7 +10,7 @@ function Home() {
   return (
     <main>
       <Banner imageSrc={homeBanner}>
-        <p className={styles.bannerText}>Chez vous, partout et aileurs</p>
+        <h1 className={styles.bannerText}>Chez vous, partout et aileurs</h1>
       </Banner>
       <section className={styles.container}>
         {data.map((element) => (
