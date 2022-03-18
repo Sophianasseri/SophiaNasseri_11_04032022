@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Carousel from '../../components/Carousel/Carousel';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Host from '../../components/Host/Host';
 import Rating from '../../components/Rating/rating';
@@ -15,6 +16,9 @@ function Accomodation() {
         .filter((elt) => elt.id === id)
         .map((accommodation) => (
           <div key={accommodation.id}>
+            <section>
+              <Carousel imageScr={accommodation.pictures} />
+            </section>
             <section>
               <div className={styles.info}>
                 <div>
