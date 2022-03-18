@@ -9,7 +9,7 @@ function Rating({ rateValue }) {
     <div className={styles.rating}>
       {stars.map((star, index) => (
         <span
-          key={index}
+          key={`stars-${index}`}
           className={index < rateValue ? styles.full : styles.empty}
         >
           {star}
