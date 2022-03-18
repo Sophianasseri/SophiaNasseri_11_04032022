@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './dropdown.module.css';
 
-function Dropdown({ title, content, smallDropdown }) {
+function Dropdown({ title, children, smallDropdown }) {
   const [isActive, setIsActive] = useState(false);
   return (
     <div
@@ -30,7 +30,7 @@ function Dropdown({ title, content, smallDropdown }) {
           )}
         </div>
       </div>
-      {isActive && <div className={styles.content}>{content}</div>}
+      {isActive && <div className={styles.content}>{children}</div>}
     </div>
   );
 }
@@ -38,7 +38,7 @@ export default Dropdown;
 
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
   smallDropdown: PropTypes.bool,
 };
 
