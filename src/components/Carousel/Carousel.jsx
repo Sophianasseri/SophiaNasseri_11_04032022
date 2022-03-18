@@ -17,10 +17,16 @@ function Carousel({ imageScr }) {
 
   return (
     <div className={styles.carousel}>
-      <button className={styles.prev} onClick={prevSlide}>
+      <button
+        className={`${styles.prev} ${slideLength === 1 ? styles.hidden : ''}`}
+        onClick={prevSlide}
+      >
         <i className="fa">&#xf053;</i>
       </button>
-      <button className={styles.next} onClick={nextSlide}>
+      <button
+        className={`${styles.next} ${slideLength === 1 ? styles.hidden : ''}`}
+        onClick={nextSlide}
+      >
         <i className="fa">&#xf054;</i>
       </button>
 
