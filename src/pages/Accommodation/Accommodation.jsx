@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Host from '../../components/Host/Host';
-import Rating from '../../components/Rating/Rate';
+import Rating from '../../components/Rating/Rating';
 import Tags from '../../components/Tags/Tags';
 import data from '../../data/accommodation.json';
 import styles from './accommodation.module.css';
