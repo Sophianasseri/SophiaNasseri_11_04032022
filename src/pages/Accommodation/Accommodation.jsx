@@ -60,7 +60,7 @@ function Accomodation() {
               <Dropdown title="Équipements" smallDropdown>
                 <ul>
                   {accommodation.equipments.map((equipment) => (
-                    <li key={equipment.id}>{equipment}</li>
+                    <li key={`equipment-${equipment}`}>{equipment}</li>
                   ))}
                 </ul>
               </Dropdown>
