@@ -35,3 +35,18 @@
   color: #fff;
   z-index: 1;
 }
+
+@media screen and (max-width: 1400px) {
+  .image {
+    width: 100%;
+  }
+  .thumb {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .thumb {
+    margin: 20px 0;
+  }
+}

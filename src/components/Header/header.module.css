@@ -2,19 +2,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 0 45px 0;
 }
 .image {
-  height: 50px;
+  height: 68px;
 }
 
 .navigation {
   display: flex;
-  width: 200px;
+  justify-content: flex-end;
 }
 
-.link {
+.navigation a {
   color: var(--main-color);
-  width: 50%;
-  text-align: end;
+  margin: 0 30px;
+  font-size: 1.5em;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .image {
+    height: 35px;
+  }
+  .navigation a {
+    font-size: 1em;
+    margin: 0 10px;
+  }
+  .header {
+    padding: 15px 0 20px 0;
+  }
 }

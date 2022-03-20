@@ -31,3 +31,23 @@
 .smallDropdown {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .smallDropdown {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown {
+    margin: 15px 0;
+  }
+  .dropdown .title {
+    font-size: 1em;
+  }
+  .toggle {
+    height: 36px;
+  }
+  .content {
+    font-size: 0.9em;
+  }
+}

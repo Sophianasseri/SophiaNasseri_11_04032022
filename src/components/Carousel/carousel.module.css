@@ -36,3 +36,23 @@
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+  .image {
+    height: 255px;
+    border-radius: 15px;
+  }
+  .prev,
+  .next {
+    font-size: 2em;
+  }
+  .prev {
+    left: 12px;
+  }
+  .next {
+    right: 12px;
+  }
+}

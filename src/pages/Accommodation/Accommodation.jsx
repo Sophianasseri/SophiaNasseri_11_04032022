@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Host from '../../components/Host/Host';
-import Rating from '../../components/Rating/Rating';
+import Rating from '../../components/Rating/Rate';
 import Tags from '../../components/Tags/Tags';
 import data from '../../data/accommodation.json';
 import styles from './accommodation.module.css';
@@ -16,7 +16,7 @@ function Accomodation() {
   useEffect(() => {
     if (accommodation === undefined) {
       const element = data.find((elt) => elt.id === id);
-      /* Redirect to page error 404 if user change id parameter to an undefined one */
+      // Redirect to 404 error page if user change id parameter to an undefined one
       if (element === undefined) {
         navigate('/404');
       } else {
@@ -28,7 +28,7 @@ function Accomodation() {
     <main>
       {accommodation ? (
         <div key={accommodation.id}>
-          <section>
+          <section className={styles.carousel}>
             <Carousel imageArr={accommodation.pictures} />
           </section>
           <section>
@@ -42,13 +42,12 @@ function Accomodation() {
                   ))}
                 </ul>
               </div>
-              <div>
-                <div className={styles.host}>
-                  <Host
-                    name={accommodation.host.name}
-                    imageScr={accommodation.host.picture}
-                  />
-                </div>
+              <div className={styles.host}>
+                <Host
+                  name={accommodation.host.name}
+                  imageScr={accommodation.host.picture}
+                />
+
                 <Rating rateValue={accommodation.rating} />
               </div>
             </div>
@@ -60,8 +59,8 @@ function Accomodation() {
 
               <Dropdown title="Équipements" smallDropdown>
                 <ul>
-                  {accommodation.equipments.map((eq) => (
-                    <li key={eq.id}>{eq}</li>
+                  {accommodation.equipments.map((equipment) => (
+                    <li key={equipment.id}>{equipment}</li>
                   ))}
                 </ul>
               </Dropdown>

@@ -12,3 +12,12 @@
   border-radius: 50%;
   height: 64px;
 }
+
+@media screen and (max-width: 768px) {
+  .image {
+    height: 40px;
+  }
+  .name {
+    font-size: 0.8em;
+  }
+}

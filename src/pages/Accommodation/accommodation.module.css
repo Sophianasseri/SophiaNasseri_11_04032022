@@ -1,6 +1,7 @@
 .info {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   color: var(--main-color);
 }
 .title {
@@ -8,11 +9,43 @@
 }
 .tag {
   display: flex;
-  margin: 10px 0;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .dropdown {
   display: flex;
   justify-content: space-around;
   gap: 10%;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+  }
+  .title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  .location {
+    font-size: 0.8em;
+  }
+  .tag {
+    margin: 5px 0;
+  }
+  .host {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .dropdown {
+    flex-direction: column;
+  }
 }

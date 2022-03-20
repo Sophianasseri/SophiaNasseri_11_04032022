@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import styles from './header.module.css';
 
@@ -10,14 +10,20 @@ function Header() {
       <nav>
         <ul className={styles.navigation}>
           <li>
-            <Link className={styles.link} to="/">
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : '')}
+              to="/"
+            >
               Accueil
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className={styles.link} to="/about">
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : '')}
+              to="/about"
+            >
               À Propos
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

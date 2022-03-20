@@ -16,3 +16,10 @@
   margin: 0 3px;
   font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  .full,
+  .empty {
+    font-size: 15px;
+  }
+}

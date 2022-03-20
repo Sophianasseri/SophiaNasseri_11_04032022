@@ -11,3 +11,11 @@
   filter: brightness(75%);
 }
 
+@media screen and (max-width: 576px) {
+  .banner {
+    height: 150px;
+  }
+  .image {
+    border-radius: 10px;
+  }
+}

@@ -9,7 +9,9 @@ function About() {
     <section>
       <Banner imageSrc={aboutBanner} />
       {dropdownData.map(({ title, content }) => (
-        <Dropdown key={title} title={title} content={<p>{content}</p>} />
+        <Dropdown key={title} title={title}>
+          <p>{content}</p>
+        </Dropdown>
       ))}
     </section>
   );
